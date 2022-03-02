@@ -7,6 +7,6 @@ using namespace std;
 
 void main() {
 	Animal animal;
-
+	animal.id = 10;
 	animal.doSomething();
 	}
