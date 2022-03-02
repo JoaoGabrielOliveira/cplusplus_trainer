@@ -47,7 +47,28 @@ void sum_program() {
 }
 
 void feet_to_meters_program() {
-	printf("Ainda não esta pronto!");
+	const double ft_to_m = 3.28;
+	double meters, feets;
+	char option;
+
+	cout << "\nTo convert Feets to Meters digit f";
+	cout << "\nTo convert Meters to Feets digit m";
+	cout << "\nWhat you wanna do:";
+	cin >> option;
+
+	if (option == 'f') {
+		cout << "\nDigit the feets:";
+		cin >> feets;
+		printf("%f ft in meters is: %f m", feets, feets / ft_to_m);
+	}
+	else {
+		cout << "\nDigit the meters:";
+		cin >> meters;
+		printf("%f m in feets is: %f ft", meters, meters * ft_to_m);
+	}
+	
+	cin.ignore();
+		
 }
 
 void main() {
@@ -75,8 +96,9 @@ void main() {
 			feet_to_meters_program();
 		break;
 
-		default:
-			break;
+		default: continue;
 		}
+
+		cin.ignore();
 	}
 }
