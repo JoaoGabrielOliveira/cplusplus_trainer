@@ -8,5 +8,8 @@ using namespace std;
 void main() {
 	Animal animal;
 	animal.id = 10;
+	animal.name = "Calopsita";
 	animal.doSomething();
+	
+	Animal::doDoSomething();
 	}
